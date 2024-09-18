@@ -103,9 +103,12 @@ details {
 
 details > summary {
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: bold;
   cursor: pointer;
   list-style: none;
+  border-bottom: 0.2px solid;
+  border-color: #9a9de8;
+  width: 15rem;
 }
 
 details > summary::before {
@@ -126,8 +129,12 @@ details > ol {
   margin: 0;
 }
 
+details[open] > summary {
+  color: #9a9de8;
+}
+
 details[open]{
-  background-color: rgba(253, 255, 242, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   height: auto;
   max-height: none;
 }
